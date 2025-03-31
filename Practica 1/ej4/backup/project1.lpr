@@ -24,7 +24,7 @@ begin
   while (not eof(archVotos)) do
   begin
     read(archVotos, lectura);
-    writeln(archTexto, lectura);
+    writeln(archTexto, votos);
   end;
 
   close(archVotos);
