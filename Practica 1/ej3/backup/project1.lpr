@@ -16,15 +16,15 @@ begin
 
   rewrite(arch);
   write('dino: ');
-  readln(lecDino);
+  readln(dino);
   while (lecDino <> FIN) do
   begin
-       writeln(arch, lecDino);
+       writeln(arch, dino);
 
        write('dino: ');
-       readln(lecDino);
+       readln(dino);
   end;
 
-  close(arch);
+  close(dino);
 end.
 
