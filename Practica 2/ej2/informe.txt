@@ -1,20 +1,25 @@
 Autor: Autor A
-Nombre Disco: Disco S Cantidad Vendida: 12
-Nombre Disco: Disco S Cantidad Vendida: 53
-Nombre Disco: Disco U Cantidad Vendida: 23
-Nombre Disco: Disco U Cantidad Vendida: 70
-Nombre Disco: Disco T Cantidad Vendida: 71
+Nombre Disco: Disco R Cantidad Vendida: 86
+Nombre Disco: Disco R Cantidad Vendida: 26
+Nombre Disco: Disco W Cantidad Vendida: 34
+Nombre Disco: Disco X Cantidad Vendida: 70
+Nombre Disco: Disco Z Cantidad Vendida: 100
 Autor: Autor B
-Nombre Disco: Disco Z Cantidad Vendida: 73
-Nombre Disco: Disco R Cantidad Vendida: 99
-Nombre Disco: Disco R Cantidad Vendida: 36
-Nombre Disco: Disco V Cantidad Vendida: 21
+Nombre Disco: Disco R Cantidad Vendida: 91
 Autor: Autor C
-Nombre Disco: Disco S Cantidad Vendida: 6
+Nombre Disco: Disco R Cantidad Vendida: 60
+Nombre Disco: Disco Z Cantidad Vendida: 3
+Nombre Disco: Disco S Cantidad Vendida: 83
 Autor: Autor D
-Nombre Disco: Disco T Cantidad Vendida: 25
-Nombre Disco: Disco T Cantidad Vendida: 1
-Nombre Disco: Disco U Cantidad Vendida: 18
-Nombre Disco: Disco Z Cantidad Vendida: 77
-Nombre Disco: Disco Y Cantidad Vendida: 23
+Nombre Disco: Disco S Cantidad Vendida: 70
+Nombre Disco: Disco T Cantidad Vendida: 18
+Nombre Disco: Disco X Cantidad Vendida: 51
+Nombre Disco: Disco R Cantidad Vendida: 31
+Nombre Disco: Disco R Cantidad Vendida: 7
 Autor: Autor E
+Nombre Disco: Disco X Cantidad Vendida: 12
+Nombre Disco: Disco X Cantidad Vendida: 35
+Nombre Disco: Disco R Cantidad Vendida: 88
+Nombre Disco: Disco S Cantidad Vendida: 59
+Nombre Disco: Disco U Cantidad Vendida: 50
+Nombre Disco: Disco U Cantidad Vendida: 35

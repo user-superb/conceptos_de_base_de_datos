@@ -8,29 +8,65 @@
       <Unit>
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="42"/>
-        <CursorPos X="15" Y="72"/>
-        <UsageCount Value="20"/>
-      </Unit>
-      <Unit>
-        <Filename Value="..\generarCDs\project1.lpr"/>
-        <UnitName Value="GenerarCDs"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="5"/>
-        <CursorPos Y="36"/>
-        <UsageCount Value="10"/>
+        <TopLine Value="55"/>
+        <CursorPos X="23" Y="37"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="1">
+    <JumpHistory HistoryIndex="12">
       <Position>
-        <Filename Value="..\generarCDs\project1.lpr"/>
-        <Caret Line="58" Column="33" TopLine="33"/>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="5" Column="83"/>
       </Position>
       <Position>
-        <Filename Value="..\generarCDs\project1.lpr"/>
-        <Caret Line="24" Column="92" TopLine="5"/>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="23" Column="20" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="28" Column="82" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="64" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="67" Column="41" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="55" Column="35" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="70" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="55" Column="51" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="67" Column="12" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="66" Column="29" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="55" Column="51" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="35" Column="23" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="76" Column="28" TopLine="37"/>
       </Position>
     </JumpHistory>
     <RunParams>

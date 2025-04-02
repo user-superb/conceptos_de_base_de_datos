@@ -23,6 +23,8 @@ var
   totGen_actual: Integer;
   totAut_actual: Integer;
   totDiscografia: Integer;
+
+  hayDatos: Boolean;
 begin
   totDiscografia:= 0;
 
@@ -30,11 +32,16 @@ begin
   assign(archInforme, 'informe.txt');
 
   reset(archCD);
-  rewrite(archInforme); 
+  rewrite(archInforme);
 
-  while (not eof(archCD)) do
+  if (not EOF(archCD)) then
   begin
     read(archCD, regcd);
+    hayDatos:= true;
+  end;
+
+  while (hayDatos) do
+  begin
     cod_actual:= regcd.cod;
     totAut_actual:= 0;
 
@@ -44,7 +51,7 @@ begin
     write(archInforme, 'Autor: ', regcd.nomA);
     writeln(archInforme);
 
-    while (not eof(archCD) and (regcd.cod = cod_actual)) do
+    while (hayDatos and (regcd.cod = cod_actual)) do
     begin
       gen_actual:= regcd.genero;
       totGen_actual:= 0;
@@ -52,7 +59,7 @@ begin
       write('Genero: ', regcd.genero);
       writeln();
 
-      while (not eof(archCD) and (regcd.cod = cod_actual) and (regcd.genero = gen_actual)) do
+      while (hayDatos and (regcd.cod = cod_actual) and (regcd.genero = gen_actual)) do
       begin
         totGen_actual:= totGen_actual + regcd.cantVend;
         totAut_actual:= totAut_actual + regcd.cantVend;
@@ -63,13 +70,16 @@ begin
         write(archInforme, 'Nombre Disco: ', regcd.nomD, ' Cantidad Vendida: ', regcd.cantVend);
         writeln(archInforme);
 
-        read(archCD, regcd);
+        if (not eof(archCD)) then
+          read(archCD, regcd)
+        else
+          hayDatos:= false;
+
       end;
       write('Total Genero: ', totGen_actual);
       writeln();
     end;
     write('Total Autor: ', totAut_actual);
-    writeln();
     writeln();
   end;
   write('Total Discografia: ', totDiscografia);
@@ -80,4 +90,5 @@ begin
   writeln('Se cerraron los archivos.');
   readln();
 end.
+
 

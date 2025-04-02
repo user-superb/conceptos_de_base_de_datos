@@ -23,8 +23,6 @@ var
   totGen_actual: Integer;
   totAut_actual: Integer;
   totDiscografia: Integer;
-
-  hayDatos: Boolean;
 begin
   totDiscografia:= 0;
 
@@ -34,14 +32,9 @@ begin
   reset(archCD);
   rewrite(archInforme);
 
-  if (not EOF(archCD) then
+  while (not eof(archCD)) do
   begin
     read(archCD, regcd);
-    hayDatos:= true;
-  end;
-
-  while (hayDatos) do
-  begin
     cod_actual:= regcd.cod;
     totAut_actual:= 0;
 
@@ -51,7 +44,7 @@ begin
     write(archInforme, 'Autor: ', regcd.nomA);
     writeln(archInforme);
 
-    while (hayDatos and (regcd.cod = cod_actual)) do
+    while (not eof(archCD) and (regcd.cod = cod_actual)) do
     begin
       gen_actual:= regcd.genero;
       totGen_actual:= 0;
@@ -59,7 +52,7 @@ begin
       write('Genero: ', regcd.genero);
       writeln();
 
-      while (hayDatos and (regcd.cod = cod_actual) and (regcd.genero = gen_actual)) do
+      while (not eof(archCD) and (regcd.cod = cod_actual) and (regcd.genero = gen_actual)) do
       begin
         totGen_actual:= totGen_actual + regcd.cantVend;
         totAut_actual:= totAut_actual + regcd.cantVend;
@@ -70,11 +63,7 @@ begin
         write(archInforme, 'Nombre Disco: ', regcd.nomD, ' Cantidad Vendida: ', regcd.cantVend);
         writeln(archInforme);
 
-        if (not eof(archCD)) then
-          read(archCD, regcd)
-        else
-          hayDatos:= false;
-
+        read(archCD, regcd);
       end;
       write('Total Genero: ', totGen_actual);
       writeln();
