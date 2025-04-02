@@ -1,0 +1,20 @@
+Autor: Autor A
+Nombre Disco: Disco S Cantidad Vendida: 12
+Nombre Disco: Disco S Cantidad Vendida: 53
+Nombre Disco: Disco U Cantidad Vendida: 23
+Nombre Disco: Disco U Cantidad Vendida: 70
+Nombre Disco: Disco T Cantidad Vendida: 71
+Autor: Autor B
+Nombre Disco: Disco Z Cantidad Vendida: 73
+Nombre Disco: Disco R Cantidad Vendida: 99
+Nombre Disco: Disco R Cantidad Vendida: 36
+Nombre Disco: Disco V Cantidad Vendida: 21
+Autor: Autor C
+Nombre Disco: Disco S Cantidad Vendida: 6
+Autor: Autor D
+Nombre Disco: Disco T Cantidad Vendida: 25
+Nombre Disco: Disco T Cantidad Vendida: 1
+Nombre Disco: Disco U Cantidad Vendida: 18
+Nombre Disco: Disco Z Cantidad Vendida: 77
+Nombre Disco: Disco Y Cantidad Vendida: 23
+Autor: Autor E
