@@ -2,7 +2,7 @@ program project1;
 uses
   sysutils;
 type
-  Texto=String[100];
+  Texto=String[50];
   ventas= record
     cod: Integer;
     tam: Integer;
@@ -40,12 +40,15 @@ begin
     hayData:= true;
   end;
 
-
   while (hayData and not seEncontro) do
   begin
-    read(archCalzados, regC);
     if (regV.cod = regC.cod) then
        seEncontro:= true;
+
+    if (not seEncontro and not eof(archCalzados)) then
+       read(archCalzados, regC)
+    else
+      hayData:= false;
   end;
 
   if (seEncontro) then
@@ -53,6 +56,8 @@ begin
     if ((regC.stock - regV.cant_vend) >= 0) then
     begin
       regC.stock:= regC.stock - regV.cant_vend;
+      seek(archCalzados, FilePos(archCalzados) - 1);
+      write(archCalzados, regC);
     end
     else if (regV.cant_vend = 0) then
     begin
@@ -68,6 +73,31 @@ begin
   end;
 end;
 
+procedure imprimirCalzados(var archCalzados: tArchCalzados);
+var
+  regC: calzados;
+
+  hayData: Boolean;
+begin
+  reset(archCalzados);
+
+  if (not eof(archCalzados)) then
+  begin
+    read(archCalzados, regC);
+    hayData:= true;
+  end;
+
+  while (hayData) do
+  begin
+    writeln('cod: ', regC.cod, ' stock: ', regC.stock);
+
+    if (not eof(archCalzados)) then
+      read(archCalzados, regC)
+    else
+      hayData:= false;
+  end;
+end;
+
 var
   archCalzados: tArchCalzados;
   archVentas: tArchVentas;
@@ -80,18 +110,20 @@ var
 
   i: Integer;
 begin
-  assign(archCalzados, 'calzados');
+  assign(archCalzados, 'calzados.dat');
   assign(archInforme, 'calzadosinstock.txt');
   reset(archCalzados);
   append(archInforme);
 
-  for i:= 0 to 19 do
+  imprimirCalzados(archCalzados);
+
+  for i:= 1 to 3 do
   begin
     hayData:= false;
 
-    assign(archVentas, Concat('ventas', IntToStr(i + 1)));
+    assign(archVentas, Concat('ventas', IntToStr(i),'.dat'));
     reset(archVentas);
-    writeln('Abierto: ventas', IntToStr(i));
+    writeln('Se abrio ventas', IntToStr(i), '.dat');
 
     if (not eof(archVentas)) then
     begin
@@ -108,9 +140,10 @@ begin
         hayData:= false;
     end;
 
-
     close(archVentas);
   end;
+
+  imprimirCalzados(archCalzados);
 
   close(archCalzados);
   close(archInforme);
