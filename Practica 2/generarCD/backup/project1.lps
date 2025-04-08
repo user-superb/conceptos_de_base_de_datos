@@ -10,16 +10,20 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="GenerarCDs"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="4"/>
-        <CursorPos X="24" Y="24"/>
+        <TopLine Value="33"/>
+        <CursorPos Y="64"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory>
+    <JumpHistory HistoryIndex="1">
       <Position>
         <Filename Value="project1.lpr"/>
         <Caret Line="2" Column="24"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="16" Column="76" TopLine="4"/>
       </Position>
     </JumpHistory>
     <RunParams>
