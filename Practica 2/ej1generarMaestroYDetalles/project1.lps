@@ -8,21 +8,29 @@
       <Unit>
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="GenerarCDs"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="36" Y="50"/>
+        <TopLine Value="49"/>
+        <CursorPos X="12" Y="71"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="1">
+    <JumpHistory HistoryIndex="3">
       <Position>
         <Filename Value="project1.lpr"/>
-        <Caret Line="2" Column="24"/>
+        <Caret Line="72" Column="5" TopLine="50"/>
       </Position>
       <Position>
         <Filename Value="project1.lpr"/>
-        <Caret Line="16" Column="76" TopLine="4"/>
+        <Caret Line="58" Column="20"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="36" Column="51" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="40" Column="47" TopLine="28"/>
       </Position>
     </JumpHistory>
     <RunParams>
