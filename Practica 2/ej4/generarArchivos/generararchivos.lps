@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="generararchivos.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="generarDetalles"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="10"/>
+        <CursorPos X="36" Y="34"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="2">
+      <Position>
+        <Filename Value="generararchivos.lpr"/>
+        <Caret Line="65" Column="99" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="generararchivos.lpr"/>
+        <Caret Line="17" Column="31" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="generararchivos.lpr"/>
+        <Caret Line="33" Column="95" TopLine="10"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
